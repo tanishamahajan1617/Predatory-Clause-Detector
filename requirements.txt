@@ -1,0 +1,5 @@
+pandas
+spacy
+transformers
+torch
+scikit-learn
