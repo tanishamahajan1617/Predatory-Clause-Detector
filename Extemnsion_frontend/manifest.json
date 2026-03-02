@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ToS Predatory Detector",
+  "version": "1.0",
+  "description": "Analyzes legal clauses using AI",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ]
+}

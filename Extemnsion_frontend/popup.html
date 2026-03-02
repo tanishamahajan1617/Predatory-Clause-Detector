@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 320px; font-family: 'Segoe UI', sans-serif; padding: 15px; background-color: #f4f7f6; }
+    h2 { color: #2c3e50; font-size: 16px; text-align: center; margin-bottom: 15px; }
+    .container { display: flex; flex-direction: column; gap: 10px; }
+    #scanBtn { 
+      background: #e74c3c; color: white; border: none; padding: 12px; 
+      border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s;
+    }
+    #scanBtn:hover { background: #c0392b; }
+    #result { 
+      margin-top: 15px; padding: 12px; border-radius: 8px; 
+      background: white; border: 1px solid #ddd; min-height: 50px; font-size: 13px;
+    }
+    .finding { 
+      color: #e67e22; font-weight: bold; background: #fff5eb;
+      padding: 5px; border-radius: 4px; margin-top: 5px; border-left: 4px solid #e67e22;
+    }
+    .safe { color: #27ae60; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>⚖️ ToS Clause Scanner</h2>
+  <div class="container">
+    <button id="scanBtn">Analyze Selected Text</button>
+    <div id="result">Highlight a clause on the page and click "Analyze".</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
